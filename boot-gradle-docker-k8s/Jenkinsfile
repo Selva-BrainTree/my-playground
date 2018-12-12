@@ -1,0 +1,54 @@
+#!/usr/bin/env groovy
+
+// Build for FH_Adapter_CrewDataClean
+
+@groovy.transform.Field final String gitRepoUrl = 'https://ghe.aa.com/aot-foct/FH_Adapter_CrewDataClean'
+@groovy.transform.Field final String gitRepoDisplayName = 'FH Adapter CrewDataClean'
+
+properties properties: [
+        pipelineTriggers([[$class: 'GitHubPushTrigger']]),
+        disableConcurrentBuilds(),
+        [$class: 'GithubProjectProperty', displayName: gitRepoDisplayName, projectUrlStr: gitRepoUrl],
+        buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10'))
+]
+
+notify = new com.aa.jenkins.pipeline.notify()
+structure = new com.aa.jenkins.pipeline.structure()
+report = new com.aa.jenkins.pipeline.report()
+
+branch = null
+eventDate = null
+def params
+
+emailList = 'hari.chitta@aa.com'
+
+node('linux') {
+    timestamps {
+        String stageName = 'checkout'
+        stage(stageName) {
+//            sh 'env | sort' // debug
+
+            branch = structure.gitBranch()
+            echo "branch=${branch}"
+
+            notify.notifySlack("START")
+
+            if (env.EMAIL_LIST != null && "${env.EMAIL_LIST}".length() > 0) {
+                emailList = "${env.EMAIL_LIST}"
+            }
+
+            structure.withNotification(to: emailList, includeDevelopers: true, stageName: stageName) {
+                checkout scm
+
+                params = report.stageCompleted(stageName: "git", gitRepoUrl: gitRepoUrl)
+            }
+        }
+
+        stage('Notifications') {
+            report.buildCompleted(params, currentBuild.startTimeInMillis, System.currentTimeMillis(), true)
+
+            echo "SUCCESS : Job '${env.JOB_NAME} [${env.BUILD_NUMBER} ${branch}]'"
+            notify.notifySuccess(to: emailList, includeDevelopers: true)
+        }
+    }
+}
