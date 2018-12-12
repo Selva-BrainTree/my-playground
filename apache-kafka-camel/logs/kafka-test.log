@@ -1,0 +1,333 @@
+2018-05-02 16:08:11 INFO  MessageConsumerClient:26 - About to run Kafka-camel integration...
+2018-05-02 16:08:11 INFO  MessageConsumerClient$1:37 - About to start route: Kafka Server -> Log 
+2018-05-02 16:08:11 INFO  DefaultTypeConverter:66 - Type converters loaded (core: 192, classpath: 0)
+2018-05-02 16:08:11 INFO  DefaultCamelContext:3133 - Apache Camel 2.20.0 (CamelContext: camel-1) is starting
+2018-05-02 16:08:11 INFO  ManagedManagementStrategy:205 - JMX is enabled
+2018-05-02 16:08:11 INFO  DefaultCamelContext:3453 - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2018-05-02 16:08:11 INFO  KafkaConsumer:93 - Starting Kafka consumer on topic: TestLog with breakOnFirstError: false
+2018-05-02 16:08:11 INFO  DefaultCamelContext:4013 - Route: FromKafka started and consuming from: kafka://TestLog?brokers=localhost%3A9092&consumersCount=1&groupId=kafkaGroup&maxPollRecords=5000&seekTo=beginning
+2018-05-02 16:08:11 INFO  DefaultCamelContext:3182 - Total 1 routes, of which 1 are started
+2018-05-02 16:08:11 INFO  DefaultCamelContext:3194 - Apache Camel 2.20.0 (CamelContext: camel-1) started in 0.231 seconds
+2018-05-02 16:08:11 INFO  ConsumerConfig:223 - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafkaGroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 5000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 50
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 40000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-05-02 16:08:11 INFO  AppInfoParser:83 - Kafka version : 0.11.0.1
+2018-05-02 16:08:11 INFO  AppInfoParser:84 - Kafka commitId : c2a0d5f9b1f45bf5
+2018-05-02 16:08:11 INFO  KafkaConsumer:180 - Subscribing TestLog-Thread 0 to topic TestLog
+2018-05-02 16:08:11 INFO  AbstractCoordinator:607 - Discovered coordinator QJ07311204.corpaa.aa.com:9092 (id: 2147483647 rack: null) for group kafkaGroup.
+2018-05-02 16:08:12 INFO  ConsumerCoordinator:419 - Revoking previously assigned partitions [] for group kafkaGroup
+2018-05-02 16:08:12 INFO  AbstractCoordinator:442 - (Re-)joining group kafkaGroup
+2018-05-02 16:08:12 INFO  AbstractCoordinator:409 - Successfully joined group kafkaGroup with generation 17
+2018-05-02 16:08:12 INFO  ConsumerCoordinator:262 - Setting newly assigned partitions [TestLog-0, TestLog-1] for group kafkaGroup
+2018-05-02 16:08:12 INFO  FromKafka:159 - Test Message from  MessagePublisherClient Wed May 02 12:28:06 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - TOPIC Test Message from  MessagePublisherClient Wed May 02 12:28:06 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - PART 0 :  TOPIC Test Message from  MessagePublisherClient Wed May 02 12:28:06 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - fedsf
+2018-05-02 16:08:12 INFO  FromKafka:159 - resf
+2018-05-02 16:08:12 INFO  FromKafka:159 - fdvfdv
+2018-05-02 16:08:12 INFO  FromKafka:159 - vfgf
+2018-05-02 16:08:12 INFO  FromKafka:159 - trtr
+2018-05-02 16:08:12 INFO  FromKafka:159 - grdtrd
+2018-05-02 16:08:12 INFO  FromKafka:159 - dgrt
+2018-05-02 16:08:12 INFO  FromKafka:159 - gr
+2018-05-02 16:08:12 INFO  FromKafka:159 - gdrg
+2018-05-02 16:08:12 INFO  FromKafka:159 - dgfd
+2018-05-02 16:08:12 INFO  FromKafka:159 - gfd
+2018-05-02 16:08:12 INFO  FromKafka:159 - gfdg
+2018-05-02 16:08:12 INFO  FromKafka:159 - fdg
+2018-05-02 16:08:12 INFO  FromKafka:159 - dgfd
+2018-05-02 16:08:12 INFO  FromKafka:159 - gfdg
+2018-05-02 16:08:12 INFO  FromKafka:159 - test
+2018-05-02 16:08:12 INFO  FromKafka:159 - Test Message
+2018-05-02 16:08:12 INFO  FromKafka:159 - Test Message from  MessagePublisherClient Wed May 02 14:18:19 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - TOPIC Test Message from  MessagePublisherClient Wed May 02 14:18:19 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - PART 0 :  TOPIC Test Message from  MessagePublisherClient Wed May 02 14:18:19 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - reste
+2018-05-02 16:08:12 INFO  FromKafka:159 - teste
+2018-05-02 16:08:12 INFO  FromKafka:159 - Test Message from  MessagePublisherClient Wed May 02 14:56:07 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - TOPIC Test Message from  MessagePublisherClient Wed May 02 14:56:07 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - PART 0 :  TOPIC Test Message from  MessagePublisherClient Wed May 02 14:56:07 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - tet
+2018-05-02 16:08:12 INFO  FromKafka:159 - tette
+2018-05-02 16:08:12 INFO  FromKafka:159 - Test Message from  MessagePublisherClient Wed May 02 14:57:38 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - TOPIC Test Message from  MessagePublisherClient Wed May 02 14:57:38 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - PART 0 :  TOPIC Test Message from  MessagePublisherClient Wed May 02 14:57:38 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - test
+2018-05-02 16:08:12 INFO  FromKafka:159 - PART 1 :  PART 0 :  TOPIC Test Message from  MessagePublisherClient Wed May 02 12:28:06 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - PART 1 :  PART 0 :  TOPIC Test Message from  MessagePublisherClient Wed May 02 14:18:19 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - PART 1 :  PART 0 :  TOPIC Test Message from  MessagePublisherClient Wed May 02 14:56:07 CDT 2018
+2018-05-02 16:08:12 INFO  FromKafka:159 - PART 1 :  PART 0 :  TOPIC Test Message from  MessagePublisherClient Wed May 02 14:57:38 CDT 2018
+2018-05-02 16:08:17 INFO  MessagePublisherClient:33 - About to run Kafka-camel integration...
+2018-05-02 16:08:18 INFO  DefaultCamelContext:3133 - Apache Camel 2.20.0 (CamelContext: camel-1) is starting
+2018-05-02 16:08:18 INFO  ManagedManagementStrategy:205 - JMX is enabled
+2018-05-02 16:08:18 INFO  DefaultTypeConverter:66 - Type converters loaded (core: 192, classpath: 0)
+2018-05-02 16:08:18 INFO  DefaultCamelContext:3453 - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2018-05-02 16:08:18 INFO  ProducerConfig:223 - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 50
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2018-05-02 16:08:18 INFO  AppInfoParser:83 - Kafka version : 0.11.0.1
+2018-05-02 16:08:18 INFO  AppInfoParser:84 - Kafka commitId : c2a0d5f9b1f45bf5
+2018-05-02 16:08:18 INFO  ProducerConfig:223 - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 50
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2018-05-02 16:08:18 INFO  AppInfoParser:83 - Kafka version : 0.11.0.1
+2018-05-02 16:08:18 INFO  AppInfoParser:84 - Kafka commitId : c2a0d5f9b1f45bf5
+2018-05-02 16:08:18 INFO  ProducerConfig:223 - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class com.aa.mte.kafkatest.sample.StringPartitioner
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 50
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2018-05-02 16:08:18 INFO  AppInfoParser:83 - Kafka version : 0.11.0.1
+2018-05-02 16:08:18 INFO  AppInfoParser:84 - Kafka commitId : c2a0d5f9b1f45bf5
+2018-05-02 16:08:18 INFO  DefaultCamelContext:4013 - Route: DirectToKafka started and consuming from: direct://kafkaStart
+2018-05-02 16:08:18 INFO  DefaultCamelContext:4013 - Route: kafkaStartNoTopic started and consuming from: direct://kafkaStartNoTopic
+2018-05-02 16:08:18 INFO  DefaultCamelContext:4013 - Route: kafkaStartWithPartitioner started and consuming from: direct://kafkaStartWithPartitioner
+2018-05-02 16:08:18 INFO  DefaultCamelContext:4013 - Route: route1 started and consuming from: stream://in
+2018-05-02 16:08:18 INFO  DefaultCamelContext:3182 - Total 4 routes, of which 4 are started
+2018-05-02 16:08:18 INFO  DefaultCamelContext:3194 - Apache Camel 2.20.0 (CamelContext: camel-1) started in 0.570 seconds
+2018-05-02 16:08:18 INFO  FromKafka:159 - Test Message from  MessagePublisherClient Wed May 02 16:08:17 CDT 2018
+2018-05-02 16:08:18 INFO  DirectToKafka:159 - {breadcrumbId=ID-QJ07311204-1525295297730-0-1, kafka.KEY=1, kafka.PARTITION_KEY=0, org.apache.kafka.clients.producer.RecordMetadata=[TestLog-0@34]}
+2018-05-02 16:08:18 INFO  kafkaStartNoTopic:159 - {breadcrumbId=ID-QJ07311204-1525295297730-0-2, kafka.KEY=2, kafka.PARTITION_KEY=0, kafka.TOPIC=TestLog, org.apache.kafka.clients.producer.RecordMetadata=[TestLog-0@35]}
+2018-05-02 16:08:18 INFO  FromKafka:159 - TOPIC Test Message from  MessagePublisherClient Wed May 02 16:08:17 CDT 2018
+2018-05-02 16:08:18 INFO  FromKafka:159 - PART 0 :  TOPIC Test Message from  MessagePublisherClient Wed May 02 16:08:17 CDT 2018
+2018-05-02 16:08:18 INFO  kafkaStartWithPartitioner:159 - {breadcrumbId=ID-QJ07311204-1525295297730-0-3, kafka.KEY=AB, org.apache.kafka.clients.producer.RecordMetadata=[TestLog-0@36]}
+2018-05-02 16:08:18 INFO  FromKafka:159 - PART 1 :  PART 0 :  TOPIC Test Message from  MessagePublisherClient Wed May 02 16:08:17 CDT 2018
+2018-05-02 16:08:18 INFO  kafkaStartWithPartitioner:159 - {breadcrumbId=ID-QJ07311204-1525295297730-0-4, kafka.KEY=ABC, org.apache.kafka.clients.producer.RecordMetadata=[TestLog-1@4]}
+2018-05-02 16:08:18 INFO  MessagePublisherClient:99 - Successfully published event to Kafka.
+2018-05-02 16:08:19 INFO  FromKafka:159 - trdt
+2018-05-02 16:08:19 INFO  DirectToKafka:159 - {breadcrumbId=ID-QJ07311204-1525295297730-0-5, CamelStreamComplete=true, CamelStreamIndex=0, kafka.KEY=1, kafka.PARTITION_KEY=0, org.apache.kafka.clients.producer.RecordMetadata=[TestLog-0@37]}
+2018-05-02 16:12:20 INFO  DirectToKafka:159 - {breadcrumbId=ID-QJ07311204-1525295297730-0-6, CamelStreamComplete=true, CamelStreamIndex=1, kafka.KEY=1, kafka.PARTITION_KEY=0, org.apache.kafka.clients.producer.RecordMetadata=[TestLog-0@38]}
+2018-05-02 16:12:20 INFO  FromKafka:159 - testing
+2018-05-02 16:13:11 INFO  DefaultCamelContext:3484 - Apache Camel 2.20.0 (CamelContext: camel-1) is shutting down
+2018-05-02 16:13:11 INFO  DefaultShutdownStrategy:195 - Starting to graceful shutdown 1 routes (timeout 300 seconds)
+2018-05-02 16:13:11 INFO  KafkaConsumer:107 - Stopping Kafka consumer on topic: TestLog
+2018-05-02 16:13:13 INFO  DefaultExecutorServiceManager:403 - Waited 2.001 seconds for ExecutorService: org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@3781ecfa[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0][KafkaConsumer[TestLog]] to terminate...
+2018-05-02 16:13:15 INFO  DefaultExecutorServiceManager:403 - Waited 4.003 seconds for ExecutorService: org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@3781ecfa[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0][KafkaConsumer[TestLog]] to terminate...
+2018-05-02 16:13:15 INFO  KafkaConsumer:291 - Auto commitSync on stop TestLog-Thread 0 from topic TestLog
+2018-05-02 16:13:15 INFO  KafkaConsumer:297 - Unsubscribing TestLog-Thread 0 from topic TestLog
+2018-05-02 16:13:15 INFO  DefaultShutdownStrategy:578 - Route: FromKafka shutdown complete, was consuming from: kafka://TestLog?brokers=localhost%3A9092&consumersCount=1&groupId=kafkaGroup&maxPollRecords=5000&seekTo=beginning
+2018-05-02 16:13:15 INFO  DefaultShutdownStrategy:260 - Graceful shutdown of 1 routes completed in 4 seconds
+2018-05-02 16:13:15 INFO  DefaultCamelContext:3575 - Apache Camel 2.20.0 (CamelContext: camel-1) uptime 5 minutes
+2018-05-02 16:13:15 INFO  DefaultCamelContext:3576 - Apache Camel 2.20.0 (CamelContext: camel-1) is shutdown in 4.183 seconds
+2018-05-02 16:13:18 INFO  DefaultCamelContext:3484 - Apache Camel 2.20.0 (CamelContext: camel-1) is shutting down
+2018-05-02 16:13:18 INFO  DefaultShutdownStrategy:195 - Starting to graceful shutdown 4 routes (timeout 300 seconds)
+2018-05-02 16:13:18 INFO  DefaultShutdownStrategy:578 - Route: route1 shutdown complete, was consuming from: stream://in
+2018-05-02 16:13:18 INFO  KafkaProducer:1017 - Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2018-05-02 16:13:18 INFO  DefaultShutdownStrategy:671 - Route: kafkaStartWithPartitioner shutdown complete, was consuming from: direct://kafkaStartWithPartitioner
+2018-05-02 16:13:18 INFO  KafkaProducer:1017 - Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2018-05-02 16:13:18 INFO  DefaultShutdownStrategy:671 - Route: kafkaStartNoTopic shutdown complete, was consuming from: direct://kafkaStartNoTopic
+2018-05-02 16:13:18 INFO  KafkaProducer:1017 - Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2018-05-02 16:13:18 INFO  DefaultShutdownStrategy:671 - Route: DirectToKafka shutdown complete, was consuming from: direct://kafkaStart
+2018-05-02 16:13:18 INFO  DefaultShutdownStrategy:260 - Graceful shutdown of 4 routes completed in 0 seconds
+2018-05-02 16:13:18 INFO  DefaultCamelContext:3575 - Apache Camel 2.20.0 (CamelContext: camel-1) uptime 5 minutes
+2018-05-02 16:13:18 INFO  DefaultCamelContext:3576 - Apache Camel 2.20.0 (CamelContext: camel-1) is shutdown in 0.083 seconds
